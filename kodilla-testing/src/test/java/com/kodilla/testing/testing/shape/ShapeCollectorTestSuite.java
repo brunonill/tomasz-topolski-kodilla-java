@@ -25,8 +25,9 @@ public class ShapeCollectorTestSuite{
         shapeCollectorTest.addFigure(shapeTest);
         //When
         int output = shapeCollectorTest.getShapes().size();
-        int expected = 1;
+
         //Then
+        int expected = 1;
         Assert.assertEquals(expected, output);
 
     }
@@ -39,8 +40,9 @@ public class ShapeCollectorTestSuite{
         shapeCollectorTest.addFigure(new Circle(2));
         //        When
         int output = shapeCollectorTest.getShapes().size();
-        int expected = 2;
+
         //        Then
+        int expected = 2;
         Assert.assertEquals(expected,output);
 
     }
@@ -55,7 +57,6 @@ public class ShapeCollectorTestSuite{
     public void testRemoveFigureObjectExist() throws Exception{
         //        Given
         ShapeCollector shapeCollectorTest = new ShapeCollector();
-        int expected = 0;
         Shape figureToRemove = new Circle(2);
         shapeCollectorTest.addFigure(figureToRemove);
         //        When
@@ -63,6 +64,7 @@ public class ShapeCollectorTestSuite{
         int input = shapeCollectorTest.getShapes().size();
 
         //        Then
+        int expected = 0;
         Assert.assertEquals(expected, input);
     }
 
@@ -106,11 +108,13 @@ public class ShapeCollectorTestSuite{
         ShapeCollector shapeCollectorTest = new ShapeCollector();
         Shape one = new Circle(3);
         Shape two = new Square(3);
+
+        //        When
         shapeCollectorTest.addFigure(one);
         shapeCollectorTest.addFigure(two);
-        //        When
-        String expected = one + "" + two;
+
         //        Then
+        String expected = one + "" + two;
         Assert.assertEquals(expected, shapeCollectorTest.showFigures());
     }
 

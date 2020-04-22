@@ -15,7 +15,7 @@ public class CalculatorTest {
         int addtest = calculator.add(30, 30);
 
         //Then
-        Assert.assertEquals(50,addtest);
+        Assert.assertEquals(60,addtest);
 
 
     }
