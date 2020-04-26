@@ -17,3 +17,4 @@ public final class ForumUser{
         return realName;
     }
 }
+
