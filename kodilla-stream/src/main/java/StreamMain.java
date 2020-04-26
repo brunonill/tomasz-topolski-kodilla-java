@@ -1,4 +1,5 @@
 import com.kodilla.stream.beautifier.PoemBeautifier;
+import com.kodilla.stream.iterate.NumbersGenerator;
 import com.kodilla.stream.lambda.ExecuteSaySometching;
 import com.kodilla.stream.lambda.Executor;
 import com.kodilla.stream.lambda.ExpressionExecutor;
@@ -37,6 +38,8 @@ public class StreamMain{
         poemBeautifier.beautify("Tekst pierwszy", text -> text.chars()
                 .mapToObj(value -> Character.toString((char) value)).collect(Collectors.joining("_")));
 
+
+        NumbersGenerator.generateEven(10);
     }
 
 }
