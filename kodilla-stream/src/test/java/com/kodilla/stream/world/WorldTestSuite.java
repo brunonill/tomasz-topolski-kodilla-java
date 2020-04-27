@@ -1,4 +1,4 @@
-package world;
+package com.kodilla.stream.world;
 
 import org.junit.Assert;
 import org.junit.Test;
