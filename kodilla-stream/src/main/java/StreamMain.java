@@ -76,9 +76,10 @@ public class StreamMain{
 
         mapForumUser.entrySet().stream().map(entry -> entry.getKey() + " ><" + entry.getValue())
                 .forEach(System.out::println);
-                
+
  */
     }
+
 
 
 }

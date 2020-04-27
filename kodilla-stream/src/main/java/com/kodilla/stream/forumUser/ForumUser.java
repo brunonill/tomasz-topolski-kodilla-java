@@ -1,4 +1,4 @@
-package com.kodilla.stream.forumuser;
+package com.kodilla.stream.forumUser;
 
 import java.time.LocalDate;
 
